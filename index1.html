@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Student Records Management</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h1 style="color: blue;">Student Record Management</h1>
+
+    <form id="studentForm" style="border: 2px solid blue; padding: 10px; width: 300px;">
+        <label for="studentId" style="color: darkblue;">Student ID:</label><br />
+        <input type="text" id="studentId" required style="border: 1px solid blue; width: 100%; margin-bottom: 10px;" /><br />
+
+        <label for="studentName" style="color: darkblue;">Student Name:</label><br />
+        <input type="text" id="studentName" required style="border: 1px solid blue; width: 100%; margin-bottom: 10px;" /><br />
+
+        <label for="studentAge" style="color: darkblue;">Student Age:</label><br />
+        <input type="number" id="studentAge" required style="border: 1px solid blue; width: 100%; margin-bottom: 10px;" /><br />
+
+        <button type="submit" style="background-color: blue; color: white; border: none; padding: 5px 10px;">Add Student</button>
+    </form>
+
+    <h2 style="color: blue; margin-top: 20px;">Student Records</h2>
+    <div id="error" style="color: red;"></div>
+    <ul id="studentList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
